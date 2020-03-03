@@ -1,8 +1,8 @@
 # docker-gfw
-通过 docker-compose 一次性开启 SS + SSR + torjan
-
+##通过 docker-compose 一次性开启 SS + SSR + torjan
 
 > 于 谷歌云 e2-micro（2 个 vCPU，1 GB 内存） Ubuntu 18.04 LTS 系统下测试
+
 
 ##1）安装 Docker & 安装 Docker-compose
 ```
