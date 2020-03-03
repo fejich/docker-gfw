@@ -24,7 +24,7 @@ sudo snap install docker \
 sudo docker-compose up -d \
 && sudo docker stop trojan
 ```
-> torjan 需要于第 3）步正确配置域名解析并生成 SSL 证书后才能工作，所有目前先停止该容器运行
+> torjan 需要于第 3）步正确配置域名解析并生成 SSL 证书后才能工作，所以目前先停止该容器运行
 
 ## 3）通过 acme.sh 生成 SSL 证书
 1.开始前请配置好 vps 的域名解析
