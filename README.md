@@ -4,6 +4,13 @@
 > 于 谷歌云 e2-micro（2 个 vCPU，1 GB 内存） Ubuntu 18.04 LTS 系统下测试
 
 
+
+## 0）克隆本项目获取 docker-compose.yml 与相关文件
+```
+git clone https://github.com/fejich/docker-gfw.git \
+&& cd docker-gfw
+```
+
 ## 1）安装 Docker & 安装 Docker-compose
 ```
 sudo snap install docker \
