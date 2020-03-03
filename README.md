@@ -5,7 +5,7 @@
 
 
 
-## 0）克隆本项目获取 docker-compose.yml 与相关文件
+## 0）克隆本项目获取 docker-compose.yml 与相关配置文件
 ```
 git clone https://github.com/fejich/docker-gfw.git \
 && cd docker-gfw
