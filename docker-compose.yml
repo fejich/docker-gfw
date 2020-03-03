@@ -1,0 +1,47 @@
+---
+version: "2"
+services:
+  ss_go:
+    image: kobeyoung81/shadowsocks-go
+    container_name: SS
+    environment:
+      - PASSWORD=bing.com 
+      - METHOD=chacha20
+      - PORT=23456
+      - TIMEOUT=60
+    ports:
+      - 23456:23456/udp
+      - 23456:23456
+    restart: unless-stopped
+
+  ssr:
+    image: winterssy/shadowsocksr
+    container_name: SSR
+    volumes:
+      - ./ssr.json:/app/config.json:ro
+    ports:
+      - 23457:23457/udp
+      - 23457:23457
+    restart: unless-stopped
+
+  freshrss:
+    image: linuxserver/freshrss
+    container_name: freshrss
+    environment:
+      - PUID=1001
+      - PGID=1002
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./freshrss:/config
+    ports:
+      - 80:80
+    restart: unless-stopped
+
+  trojan:
+    image: trojangfw/trojan
+    container_name: trojan
+    volumes:
+      - ./trojan:/config
+    ports:
+      - 443:443
+    restart: unless-stopped
