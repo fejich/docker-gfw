@@ -1,17 +1,15 @@
 ---
 version: "2"
 services:
-  ss_go:
-    image: kobeyoung81/shadowsocks-go
+  ss_server:
+    image: mrjin/shadowsocks:alpine
     container_name: SS
     environment:
-      - PASSWORD=bing.com 
+      - PASSWORD=bing.com
       - METHOD=chacha20
-      - PORT=23456
-      - TIMEOUT=60
     ports:
-      - 23456:23456/udp
-      - 23456:23456
+      - "23456:8888/udp"
+      - "23456:8888"
     restart: unless-stopped
 
   ssr:
