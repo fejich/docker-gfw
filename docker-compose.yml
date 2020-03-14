@@ -8,18 +8,18 @@ services:
       - PASSWORD=bing.com
       - METHOD=chacha20
     ports:
-      - "23456:8888/udp"
-      - "23456:8888"
+      - 23456:8888
+      - 23456:8888/udp
     restart: unless-stopped
 
   ssr:
     image: winterssy/shadowsocksr
     container_name: SSR
     volumes:
-      - ./ssr.json:/app/config.json:ro
+      - ./ssr.json:/app/config.json
     ports:
-      - 23457:23457/udp
       - 23457:23457
+      - 23457:23457/udp
     restart: unless-stopped
 
   freshrss:
