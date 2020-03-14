@@ -75,8 +75,8 @@ echo "net.core.default_qdisc=fq" | sudo tee --append /etc/sysctl.conf \
 + 密码：bing.com
 
 ## 7）相关链接
-+ freshrss               https://hub.docker.com/r/linuxserver/freshrss
-+ SS                     https://hub.docker.com/r/kobeyoung81/shadowsocks-go
++ SS                     https://hub.docker.com/r/mrjin/shadowsocks
 + SSR                    https://hub.docker.com/r/winterssy/shadowsocksr
 + trojan                https://hub.docker.com/r/trojangfw/trojan
++ freshrss               https://hub.docker.com/r/linuxserver/freshrss
 + acme.sh           https://github.com/acmesh-official/acme.sh/wiki/%E8%AF%B4%E6%98%8E
