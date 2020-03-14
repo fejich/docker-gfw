@@ -6,7 +6,7 @@
 	"local_port":1080,
 	"port_password":
 	{
-		"23457":"bing.com233"
+		"23457":"bing.com"
 	},
 	"timeout":120,
 	"method":"none",
