@@ -50,6 +50,7 @@ sudo ctop
 ```
 <p align="center"><img src="ctop.png" alt="ctop"/></p>
 1.选择 trojan 容器，按回车选择 log view 可查看日志
+
 2.浏览器打开 https://你的域名 ，正常情况下会打开 freshrss 的配置页面，终端窗口滚动显示相关连接信息。
   按提示设置用户密码，至此完成所有安装配置。
 
@@ -82,4 +83,5 @@ echo "net.core.default_qdisc=fq" | sudo tee --append /etc/sysctl.conf \
 + SSR                    https://hub.docker.com/r/winterssy/shadowsocksr
 + trojan                https://hub.docker.com/r/trojangfw/trojan
 + freshrss               https://hub.docker.com/r/linuxserver/freshrss
++ ctop                https://github.com/bcicen/ctop
 + acme.sh           https://github.com/acmesh-official/acme.sh/wiki/%E8%AF%B4%E6%98%8E
