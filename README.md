@@ -33,7 +33,7 @@ sudo docker-compose up -d \
 ```
 mydomain="修改成你的域名"
 curl  https://get.acme.sh | sh \
-&& ~/.acme.sh/acme.sh --issue -d $mydomain --webroot ./freshrss/www/freshrss/p/
+&& ~/.acme.sh/acme.sh --issue -d $mydomain --webroot ./www
 ```
 2.复制证书到 trojan 目录，重启 trojan 容器
 ```
