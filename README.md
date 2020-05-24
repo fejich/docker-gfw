@@ -21,7 +21,7 @@ sudo snap install docker \
 ```
 > 非 Ubuntu 系统参考 Docker 官方方式安装：https://docs.docker.com/get-docker/
 
-## 2）通过 docker-compose 命令一次性开启 SS + SSR  + torjan + ariang 4个容器
+## 2）通过 docker-compose 命令一次性开启 SS + SSR  + torjan + nginx 4个容器
 ```
 sudo docker-compose up -d \
 && sudo docker stop trojan
@@ -82,6 +82,6 @@ echo "net.core.default_qdisc=fq" | sudo tee --append /etc/sysctl.conf \
 + SS                     https://hub.docker.com/r/mrjin/shadowsocks
 + SSR                    https://hub.docker.com/r/winterssy/shadowsocksr
 + trojan                 https://hub.docker.com/r/trojangfw/trojan
-+ ariang                 https://hub.docker.com/r/leonismoe/ariang
++ nginx                  https://hub.docker.com/_/nginx
 + ctop                   https://github.com/bcicen/ctop
 + acme.sh                https://github.com/acmesh-official/acme.sh/wiki/%E8%AF%B4%E6%98%8E
