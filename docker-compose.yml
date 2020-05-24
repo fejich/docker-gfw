@@ -22,15 +22,11 @@ services:
       - 23457:23457/udp
     restart: unless-stopped
 
-  freshrss:
-    image: linuxserver/freshrss
-    container_name: freshrss
-    environment:
-      - PUID=1001
-      - PGID=1002
-      - TZ=Asia/Shanghai
+  ariang:
+    image: leonismoe/ariang
+    container_name: ariang
     volumes:
-      - ./freshrss:/config
+      - www:/usr/share/nginx/html
     ports:
       - 80:80
     restart: unless-stopped
