@@ -22,9 +22,9 @@ services:
       - 23457:23457/udp
     restart: unless-stopped
 
-  ariang:
-    image: leonismoe/ariang
-    container_name: ariang
+  nginx:
+    image: nginx:stable-alpine
+    container_name: nginx
     volumes:
       - ./www:/usr/share/nginx/html
     ports:
